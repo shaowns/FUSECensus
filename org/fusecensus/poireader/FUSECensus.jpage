@@ -1,0 +1,6 @@
+org.fusecensus.poireader.DirectoryReader d = new org.fusecensus.poireader.DirectoryReader("/Users/ShaownS/Research Data/Spreadsheet Project/cc-Binaries");
+int count = 0;
+while (d.hasMoreFilesInDirectory()) {
+	count++;
+	System.out.println(Integer.toString(count) + " " + d.getNextFilename());
+}
